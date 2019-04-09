@@ -21,7 +21,6 @@ class BookToast extends React.Component {
   render() {
     return (
       <div id="toast">
-        {/* <Button color="primary" onClick={this.toggle}>{this.props.buttonLabel}</Button> */}
         <br />
         <br />
         <Toast isOpen={this.state.show}>

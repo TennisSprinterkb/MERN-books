@@ -34,7 +34,7 @@ class AddBookBtn extends React.Component{
           link: book.link
         }
     
-        axios.post("/books", dbBook)
+        axios.post("/api/books", dbBook)
         .then(console.log("added"))
         .catch(err => console.log(err))
       }

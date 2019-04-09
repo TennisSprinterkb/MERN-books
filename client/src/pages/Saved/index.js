@@ -7,7 +7,7 @@ import EmptyList from '../../components/EmptyList';
 class Saved extends Component {
     state = {
         savedBooks: [],
-        initialized: false
+        initialized: true
     }
 
   componentDidMount(){
@@ -15,18 +15,17 @@ class Saved extends Component {
   }
 
   getBooks = () => {
-    axios.get("/books")
+    axios.get("/api/books")
     .then(res => {
       this.setState({savedBooks: res.data})
   })
     .catch((err => console.log(err)))
-    // this.setState({initialized: true})
   }
 
   deleteFromDB = id => {
     console.log(id);
 
-    axios.delete(`/books/${id}`)
+    axios.delete(`/api/books/${id}`)
     .then(
         this.getBooks()
     )
