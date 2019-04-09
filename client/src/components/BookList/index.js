@@ -33,7 +33,7 @@ export function BookList({children}) {
 
     render(){
     return (
-      <li className="list-group-item expandUp">
+      <li>
         <Container>
         {this.state.showToast && this.makeToast()}
           <Row>

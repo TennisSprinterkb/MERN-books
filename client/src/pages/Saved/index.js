@@ -34,7 +34,7 @@ class Saved extends Component {
 
   render() {
     return (
-      <div id="wrap">
+      <div>
       <Row>
         <Col size="md-12">
           {this.state.savedBooks.length > 0 ? 

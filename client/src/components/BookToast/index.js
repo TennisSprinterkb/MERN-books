@@ -20,7 +20,7 @@ class BookToast extends React.Component {
 
   render() {
     return (
-      <div id="toast">
+      <div>
         <br />
         <br />
         <Toast isOpen={this.state.show}>

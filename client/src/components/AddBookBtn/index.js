@@ -10,7 +10,7 @@ class AddBookBtn extends React.Component{
     }
 
     makeToast = (title) => {
-      console.log("toasted...?")
+      console.log("toasted..")
       return(
       <div className="p-3 my-2 rounded">
         <Toast>
@@ -42,7 +42,7 @@ class AddBookBtn extends React.Component{
     render() {
         return (
           <div>
-          <Button type="primary" className="saveBtn" onClick={() => 
+          <Button type="primary" onClick={() => 
             {this.postToDB(this.props)
               this.props.toast()
             }}>

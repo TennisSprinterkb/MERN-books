@@ -42,11 +42,9 @@ class Search extends Component {
     return (
       <Row>
         <Col size="md-12">
-        <div className="search">
-
-          
-          <input id="bookQ" className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
-          <button id="searchBtn" className="btn btn-dark" type="submit" onClick={this.searchGBooks} >
+        <div>
+          <input className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
+          <button  type="submit" onClick={this.searchGBooks} >
             Search for Books
           </button>
                    
@@ -64,7 +62,7 @@ class Search extends Component {
                 book.volumeInfo.description : "No Description Available"}
               link={book.selfLink}
               thumbnail={book.volumeInfo.imageLinks ? 
-                book.volumeInfo.imageLinks.thumbnail : "https://loremflickr.com/320/240/book"}
+                book.volumeInfo.imageLinks.thumbnail : "#"}
               />
             )
           })}

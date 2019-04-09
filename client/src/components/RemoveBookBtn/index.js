@@ -6,7 +6,7 @@ class RemoveBookBtn extends React.Component {
 
     render(){
         return (
-            <Button className="deleteBtn" onClick={()=>this.props.delete(this.props.id)}>
+            <Button onClick={()=>this.props.delete(this.props.id)}>
                 Delete Book   
             </Button>
         )

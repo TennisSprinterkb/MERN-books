@@ -6,7 +6,6 @@ import React from "react";
 function Thumbnail({ src }) {
   return (
     <div
-      className="thumbnail"
       role="img"
       aria-label="Recipe Image"
       style={{
