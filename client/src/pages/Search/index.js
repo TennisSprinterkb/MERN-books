@@ -43,7 +43,7 @@ class Search extends Component {
       <Row>
         <Col size="md-12">
         <div>
-          <input className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
+          <input id="bookQ" className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
           <button  type="submit" onClick={this.searchGBooks} >
             Search for Books
           </button>
@@ -52,7 +52,6 @@ class Search extends Component {
           {(this.state.books && this.state.books.length > 0) ? 
           <BookList>
           {this.state.books.map(book => {
-            //console.log("Book",book)
             return (
               <BookListItem
               key={book.id} 
