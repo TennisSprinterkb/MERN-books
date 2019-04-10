@@ -44,7 +44,6 @@ class Saved extends Component {
             return (
               <BookListItem
               key={book._id}
-              // _id={book._id}
               authors={book.authors}
               title={book.title}
               synopsis={book.synopsis}
