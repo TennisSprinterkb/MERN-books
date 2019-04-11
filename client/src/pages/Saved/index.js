@@ -4,6 +4,7 @@ import {BookList, BookListItem} from "../../components/BookList";
 import axios from "axios";
 import EmptyList from '../../components/EmptyList';
 import RemoveBookBtn from '../../components/RemoveBookBtn';
+import "./style.css";
 
 class Saved extends Component {
     state = {
