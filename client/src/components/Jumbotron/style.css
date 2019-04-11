@@ -1,0 +1,10 @@
+.jumbotron{
+    background-image: url("./lib.png");
+    background-size: cover;
+}
+
+#jumboHead{
+    color: rgba(252, 245, 245, 0.993);
+    font-family: sans-serif;
+    -webkit-text-stroke: 1px black;
+  }

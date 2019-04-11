@@ -3,6 +3,7 @@ import Button from "../Button";
 import axios from "axios";
 import {Toast, ToastBody, ToastHeader} from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./style.css";
 
 class AddBookBtn extends React.Component{
     state = {
