@@ -3,6 +3,7 @@ import {Row, Col} from "../../components/Grid";
 import {BookList, BookListItem} from "../../components/BookList";
 import axios from "axios";
 import EmptyList from '../../components/EmptyList';
+import RemoveBookBtn from '../../components/RemoveBookBtn';
 
 class Saved extends Component {
     state = {
@@ -42,6 +43,7 @@ class Saved extends Component {
           {this.state.savedBooks.map(book => {
             console.log(book)
             return (
+              <div>
               <BookListItem
               key={book._id}
               authors={book.authors}
@@ -49,8 +51,13 @@ class Saved extends Component {
               synopsis={book.synopsis}
               link={book.link}
               thumbnail={book.thumbnail}
-              delete={()=> this.deleteFromDB(book._id)}
               />
+              <RemoveBookBtn
+              onClick={() => this.deleteFromDB(book._id)}
+              />
+             
+              
+              </div>
             )
           })}
           </BookList>
