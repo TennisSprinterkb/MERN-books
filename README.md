@@ -2,17 +2,17 @@
 Google Books Search
 using new technology React Toastify
 
-About
+#About
 This app was built in React and uses some ES6 features for the logic. Uses MongoDB, state, and props in React!
 
-To Use
+#Use
 Search for books on Google Books, save them if you want for later! Saves a thumbnail, description, and a link to the book as well!
 
-Tech Used
+#Tech Used
 React w/ state
 CSS
 ReactStrap
 JavaScript
 
-Todos
+#Todos
 More styling
