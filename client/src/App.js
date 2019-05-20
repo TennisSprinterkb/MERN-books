@@ -4,11 +4,12 @@ import Saved from "./pages/Saved";
 import Search from "./pages/Search";
 import Nav from "./components/Nav";
 import { Container} from "./components/Grid";
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Nav/>
         <Router>
           <Container>

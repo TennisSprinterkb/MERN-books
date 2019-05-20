@@ -41,7 +41,7 @@ class Search extends Component {
     return (
       <Row>
         <Col size="md-12">
-        <div>
+        <div className="search">
           <input id="bookQ"className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
           <button  type="submit" onClick={this.searchGBooks} >
             Search for Books

@@ -15,4 +15,4 @@ ReactStrap
 JavaScript
 
 #Todos
-More styling
+Make Smoother/ More Secure
